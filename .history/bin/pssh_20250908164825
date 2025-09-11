@@ -84,8 +84,6 @@ def do_pssh(hosts, cmdline, opts):
             cmd += ['-l', user]
         if port:
             cmd += ['-p', port]
-        elif opts.port:
-            cmd += ['-p', port]
         if opts.extra:
             cmd.extend(opts.extra)
         if cmdline:
