@@ -78,7 +78,7 @@ def do_pssh(hosts, cmdline, opts):
                '-o', 'SendEnv=PSSH_NODENUM', 
                '-o', 'SendEnv=PSSH_NUMNODES', 
                '-o', 'SendEnv=PSSH_HOST',
-               '-o', 'ConnectTimeout=3']
+               '-o', 'ConnectTimeout=5']
         if opts.options:
             for opt in opts.options:
                 cmd += ['-o', opt]
